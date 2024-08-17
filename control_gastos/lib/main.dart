@@ -1,6 +1,8 @@
+import "package:control_gastos/graph_widget.dart";
 import "package:flutter/material.dart";
 import "package:flutter/widgets.dart";
 import "package:font_awesome_flutter/font_awesome_flutter.dart";
+
 //Esté es el esquema base para crear una estructura del proyecto. Después de podrá implementar cada parte del grafismo de la app.
 //Todo lo que lleva => es incial
 void main() => runApp(MyApp());// =>
@@ -117,7 +119,12 @@ class _HomePageState extends State<HomePage>{// =>
 
     );
   }
-  Widget _graph()=> Container();
+  Widget _graph(){
+    return Container(
+      height: 250.0,
+      child: GraphWidget(),
+    );
+  }
   Widget _list()=> Container();
 
 
